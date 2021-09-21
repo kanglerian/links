@@ -24,16 +24,18 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <div class="profile-card align-self-center text-center">
-                                <img src="https://kanglerian.github.io/assets/img/photo-2.webp" width="120px" class="my-3">
-                                <h6><b>Lerian Febriana, A.Md.Kom</b></h6>
-                                <p class="fs-5 text-gray">Lecturer on Codale Center 👨‍💻</p>
-                                <button class="btn btn-danger"><i class="fab fa-youtube mr-2"></i> Subscribe</button>
-                                <a href="https://wa.me/6281286501015" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp"></i></a>
-                                <a href=" mailto:kanglerian@gmail.com" target="_blank" class="btn btn-info"><i class="fas fa-envelope"></i></a>
+                                <div class="banner">
+                                </div>
+                                <img src="./assets/images/lerian.jpeg" width="120px" class="my-3 profile-photo">
+                                <h6 class="mt-4 profile-name"><b>Lerian Febriana, A.Md.Kom</b></h6>
+                                <p class="fs-5 text-gray profile-title">Lecturer on Codale Center 👨‍💻</p>
+                                <button class="btn btn-danger youtube"><i class="fab fa-youtube mr-2"></i> Subscribe</button>
+                                <a href="https://wa.me/6281286501015" target="_blank" class="btn btn-success facebook"><i class="fab fa-whatsapp"></i></a>
+                                <a href=" mailto:kanglerian@gmail.com" target="_blank" class="btn btn-info email"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="links">
                         <div class="col-12 col-md-6">
                             <a href="http://youtube.com/c/codalecenter" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-youtube mr-2"></i> Youtube</a>
                             <a href="https://facebook.com/kanglerian" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-facebook-f mr-2"></i> Facebook</a>
@@ -46,7 +48,7 @@
         </div>
     </section>
 
-    <section class="my-4">
+    <section class="my-4" id="youtube">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
@@ -71,5 +73,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+        gsap.from(".profile-card",{duration:2.5, scale:0, rotation:-30, ease:"elastic.out(1,0.3)"});
+        gsap.from(".profile-photo",{duration:2.5, y:-200, rotation:-30, delay:0.1, ease:"elastic.out(1,0.3)"});
+        gsap.from(".profile-name",{duration:0.7, opacity:0, delay:0.3, y:100});
+        gsap.from(".profile-title",{duration:0.7, opacity:0, delay:0.4, y:100});
+        gsap.from(".youtube",{duration:2.5, y:-500, rotation:-30, delay:0.2, ease:"elastic.out(1,0.3)"});
+        gsap.from(".facebook",{duration:2.5, y:-500, rotation:-30, delay:0.3, ease:"elastic.out(1,0.3)"});
+        gsap.from(".email",{duration:2.5, y:-500, rotation:-30, delay:0.4, ease:"elastic.out(1,0.3)"});
+        gsap.from("#links",{duration:0.7, opacity:0, delay:1, y:100});
+        gsap.from("#youtube",{duration:0.7, opacity:0, delay:1.2, y:100});
+    </script>
   </body>
 </html>
