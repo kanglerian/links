@@ -23,7 +23,7 @@
                 <div class="col-12 align-self-center">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
-                            <div class="profile-card align-self-center text-center">
+                            <div class="profile-card align-self-center text-center mb-3">
                                 <div class="banner">
                                     <a href="http://kanglerian.github.io/"><img src="./assets/images/lerian.jpeg" width="120px" class="my-3 profile-photo"></a>
                                 </div>
@@ -32,6 +32,7 @@
                                 <button class="btn btn-danger youtube"><i class="fab fa-youtube mr-2"></i> Subscribe</button>
                                 <a href="https://wa.me/6281286501015" target="_blank" class="btn btn-success facebook"><i class="fab fa-whatsapp"></i></a>
                                 <a href="mailto:kanglerian@gmail.com" target="_blank" class="btn btn-info email"><i class="fas fa-envelope"></i></a>
+                                <a href="ttp://kanglerian.github.io/" target="_blank" class="btn btn-info email"  data-toggle="tooltip" data-placement="right" title="kanglerian.github.io"><i class="fas fa-user-circle"></i></a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +42,8 @@
                             <a href="https://facebook.com/kanglerian" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-facebook-f mr-2"></i> Facebook</a>
                             <a href="https://twitter.com/kanglerian" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-twitter mr-2"></i> Twitter</a>
                             <a href="https://www.behance.net/kanglerian" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-behance mr-2"></i> Behance</a>
-                            <a href="http://kanglerian.github.io/" target="_blank" class="btn btn-block btn-primary"><i class="fas fa-user-circle mr-2"></i> About me</a>
+                            <a href="https://codalecenter.blogspot.com" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-blogger-b mr-2"></i> Blogger</a>
+                            <a href="https://open.spotify.com/user/qhf3hc7hpbt2vizkxo9e47q94" target="_blank" class="btn btn-block btn-primary"><i class="fab fa-spotify mr-2"></i> Spotify</a>
                         </div>
                     </div>
                 </div>
@@ -64,10 +66,12 @@
     <footer class="pt-2">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <p class="fs-6">Copyright © 2021 codalinks.codalecenter.com. All Rights Reserved</p>
+                <p class="fs-6">Copyright © 2021 kanglerian. All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
+    <img src="./assets/images/robot.svg" height="200px" class="img-background">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -76,6 +80,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
         gsap.from(".profile-card",{duration:2.5, scale:0, rotation:-30, ease:"elastic.out(1,0.3)"});
         gsap.from(".profile-photo",{duration:2.5, y:-200, rotation:-30, delay:0.1, ease:"elastic.out(1,0.3)"});
         gsap.from(".profile-name",{duration:0.7, opacity:0, delay:0.3, y:100});

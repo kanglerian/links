@@ -2,7 +2,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 body {
-    background-color: #fff;
+    background-color: rgb(245, 248, 252);
 }
 .profile-card {
     background-color: #fff;
@@ -58,8 +58,14 @@ body {
     height: 150px;
     width: 100%;
     background-size: cover;
-    border-radius: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
     background-position: 0px auto;
+}
+.img-background {
+    position: fixed;
+    bottom:0px;
+    right: 200px;
+    z-index: -9;
 }
 footer p {
     color: #2F2F2F;
