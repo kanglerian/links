@@ -1,0 +1,44 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.profile-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    box-shadow: 0px 8px 24px rgba(173, 171, 171, 0.1);
+}
+.text-gray {
+    color:#2F2F2F;
+}
+.fs-4 {
+    font-size: 16px;
+}
+
+.fs-5 {
+    font-size:14px;
+}
+
+.fs-6 {
+    font-size:12px;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #1E639D;
+}
+.btn-primary:hover {
+    background-color: #17568a;
+}
+
+footer p {
+    color: #2F2F2F;
+}
