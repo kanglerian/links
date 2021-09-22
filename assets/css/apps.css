@@ -81,3 +81,9 @@ body {
 footer p {
     color: #2F2F2F;
 }
+.animasi {
+    position: fixed;
+    top: 0;
+    right: 25%;
+    z-index: -10;
+}
