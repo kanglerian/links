@@ -55,7 +55,7 @@ body {
     border-radius: 1rem;
 }
 .banner {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("/assets/images/banner.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("links/assets/images/banner.jpg");
     height: 150px;
     width: 100%;
     background-size: cover;
